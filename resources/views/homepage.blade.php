@@ -7,6 +7,6 @@
   <title>{{env('APP_NAME')}} - Home</title>
 </head>
 <body>
-  
+  <h1>ciao</h1>
 </body>
 </html>

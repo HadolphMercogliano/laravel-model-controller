@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+// copia il namespace dal controller
+use App\Http\Controllers\PageController as StaticController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/',[StaticController::class, 'homepage'])->name('home');
